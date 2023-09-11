@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+ /* import other css files */
+  @import url("sections/header.css");
+  @import url("sections/hero.css");
+  @import url("sections/about.css");
+  @import url("sections/popular.css");
+  @import url("sections/trending.css");
+  @import url("sections/subscription.css");
+  @import url("sections/footer.css"); 
+
+:root {
+  --playfair-display: "Playfair display", serif;
+  --plus-jakarta-sans: "Plus jakarta sans", sans-serif;
+
+  --primary-color: #b1454a;
+  --secondary-color: #121212;
+
+  --black-200: #020202;
+  --black-300: #333333;
+  --black-400: #1f1e31;
+  --black-500: #555555;
+  
+  --gray-100: #888888;
+
+  --color-white: rgb(255, 255, 255);
+  --color-creamson: #fff0de;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior : smooth;
+}
+
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  background: var(--color-creamson)
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subtitle {
+  font-family: var(--plus-jakarta-sans);
+  font-size: 18px;
+  font-weight: 400;
+
+  color: var(--primary-color);
+}
+
+.title {
+  font-family: var(--playfair-display);
+  font-size: 36px;
+  font-weight: 700;
+
+  margin-top: 16px;
+  color: var(--secondary-color);
+}
+
+.description {
+  font-family: var(--plus-jakarta-sans);
+  font-size: 18px;
+  font-weight: 400;
+
+  line-height: 1.3em; 
+  margin: 32px 0 32px 0;
+  color: var(--gray-100);
+}
+
+/* hide scrollbar for chrome, safari,  opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+/* hide scrollbar for IE, Edge,  Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /*  IE, Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+
+/*BREAK POINTS */
+@media screen and (min-width: 992px) {
+  .title {
+    font-size: 50px;
+  }
+} 
+

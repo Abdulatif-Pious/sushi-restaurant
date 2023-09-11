@@ -1,0 +1,111 @@
+.trending {
+  overflow: hidden;
+
+  position: relative;
+}
+
+.trending-discover {
+  display: none;
+
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  z-index: 5;
+
+  width: 150px;
+  height: 150px;
+  background-color: var(--black-400);
+  border-radius: 100%;
+
+  cursor: pointer;
+}
+
+.trending-discover p {
+  font-family: var(--plus-jakarta-sans);
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  color: var(--color-white)
+}
+
+.trending-sushi {
+  display: flex;
+  flex-direction: column;
+}
+
+.trending-drinks {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.trending-sushi__content, .trending-drinks__content {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 32px;
+}
+
+.trending ul {
+  list-style: none;
+
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.trending ul li {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  min-width: 210px;
+}
+
+.trending ul li div {
+  width: 24px;
+  height: 24px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}
+
+.trending-image {
+  flex: 1;
+  padding: 32px;
+
+  display: flex;
+  align-items: center;
+
+  background-color: var(--color-white);
+}
+
+.trending-image img {
+  width: 254px;
+  height: 260px;
+  object-fit: contain;
+}
+
+
+/* BREAK POINTS  */
+@media screen and (min-width: 992px) {
+  .trending-sushi, .trending-drinks {
+    flex-direction: row;
+  }
+
+  .trending-image {
+    width: 500px;
+    height: 500px;
+  }
+
+  .trending-discover {
+    display: flex;
+  }
+
+
+}
