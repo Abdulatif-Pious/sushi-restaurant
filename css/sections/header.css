@@ -10,7 +10,7 @@
   padding: 20px;
 }
 
-.header__logo h4 {
+.header__logo a {
   padding-left: 30px;
 
   font-family: var(--playfair-display);
@@ -59,6 +59,10 @@
   text-transform: uppercase;
 
   cursor: pointer;
+}
+
+.header__menu li:hover {
+  opacity: 80%;
 }
 
 .header__menu li img {

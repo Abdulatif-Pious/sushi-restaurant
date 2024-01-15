@@ -7,7 +7,7 @@
 
 
 
-.footer h3 {
+.footer > a {
   font-family: var(--playfair-display);
   font-weight: 700;
   font-size: 32px;
@@ -29,6 +29,10 @@
   text-transform: uppercase;
 }
 
+.footer-nav li:hover {
+  opacity: 80%;
+}
+
 .footer-social {
   list-style: none;
   
@@ -42,6 +46,10 @@
   background-color: var(--black-400);
   border-radius: 100%;
   cursor: pointer;
+}
+
+.footer-social li:hover {
+  opacity:80%;
 }
 
 .footer-social li img {

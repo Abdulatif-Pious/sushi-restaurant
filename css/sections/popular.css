@@ -80,6 +80,10 @@
   cursor: pointer;
 }
 
+.popular-food__btn:hover {
+  opacity: 80%;
+}
+
 .popular-food__btn img {
   margin-left: 16px;
   width: 12px;

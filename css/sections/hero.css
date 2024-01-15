@@ -99,6 +99,10 @@
   cursor: pointer;
 }
 
+.hero-content__order-button:hover {
+  opacity: 80%;
+}
+
 .hero-content__play-button {
   outline: none;
   border: none;

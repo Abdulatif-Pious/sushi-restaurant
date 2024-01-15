@@ -68,6 +68,10 @@
   outline: none;
 }
 
+.subscription-form button:hover {
+  opacity: 80%;
+}
+
 /* BREAK POINTS*/ 
 @media screen and (min-width: 550px) {
   .subscription { 
